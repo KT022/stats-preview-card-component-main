@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    :root {
+      --main-bg: hsl(233, 47%, 7%);
+      --card-bg: hsl(244, 38%, 16%);
+      --s-violet: hsl(277, 64%, 61%);
+      --s-white: hsla(0, 0%, 100%, 0.75);
+      --sd-white: hsla(0, 0%, 100%, 0.6);
+      --violet: rgba(170,92,219,.6);
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;500&family=Outfit:wght@300;400;600;700&family=Red+Hat+Display:wght@700&display=swap"
+    rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          screens: {
+            md: "900px",
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="bg-[color:var(--main-bg)]">
+  <main class="container h-[100vh] mx-auto my-0 bg-[color:var(--main-bg)] flex justify-center w-[100vw] items-center">
+    <div class="card rounded-lg max-w-[20em] max-h-[40em] bg-[color:var(--card-bg)] flex md:flex-row-reverse flex-col mx-4 md:max-w-[880px]">
+      <div class="card-picture rounded-t-lg bg-[url('./images/image-header-desktop.jpg')] md:rounded-l-none md:w-[55.2em] h-[18em] md:h-[21em] md:bg-contain md:rounded-r-lg bg-contain w-full">
+        <div class="bg-[color:var(--violet)] w-full h-full rounded-t-lg md:rounded-r-lg md:rounded-l-none"></div>
+      </div>
+
+      <!-- INFO do not need to change  -->
+      <div class="card-info flex-col flex py-8 px-6">
+        <div class="header text-center md:text-left md:pr-8 md:pl-6">
+          <p class="text-white font-bold text-[1.5em] font-['Inter',sans-serif] md:text-[2.2em] md:leading-10">
+            Get
+            <span class="text-[color:var(--s-violet)]">insights</span> that
+            help your business grow.
+          </p>
+        </div>
+        <div class="detail text-center md:text-left md:pl-6 md:mr-10">
+          <p class="md:text-left text-[color:var(--s-white)] text-[15px] font-['Inter',sans-serif] font-normal mt-5">
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </p>
+        </div>
+        <div class="feature-detail flex flex-col md:flex-row md:justify-between md:px-6 md:mt-10">
+          <div class="feature1 text-center">
+            <h1 class="text-white font-['Lexend Deca',sans-serif] font-bold text-[1.3em] mt-2 md:mt-0">
+              10k+
+            </h1>
+            <p class="text-[14px] text-[color:var(--sd-white)] font-['Lexend Deca',sans-serif] uppercase">
+              companies
+            </p>
+          </div>
+          <div class="feature2 text-center my-2 md:my-0">
+            <h1 class="text-white font-['Lexend Deca',sans-serif] font-bold text-[1.3em]">
+              314
+            </h1>
+            <p class="text-[14px] text-[color:var(--sd-white)] font-['Lexend Deca',sans-serif] uppercase">
+              templates
+            </p>
+          </div>
+          <div class="feature3 text-center md:pr-16">
+            <h1 class="text-white font-['Lexend Deca',sans-serif] font-bold text-[1.3em]">
+              12m+
+            </h1>
+            <p
+              class="text-[14px] tracking-wider text-[color:var(--sd-white)] font-['Lexend Deca',sans-serif] uppercase">
+              queries
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Get insights that help your business grow.
+
+  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+  experience, and overall efficiency.
+
+  10k+ companies
+  314 templates
+  12m+ queries -->
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Khanh Truong</a>.
+  </div> -->
+</body>
+
+</html>
